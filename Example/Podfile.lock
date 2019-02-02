@@ -1,0 +1,16 @@
+PODS:
+  - LDOGradientView (1.0.0)
+
+DEPENDENCIES:
+  - LDOGradientView (from `../`)
+
+EXTERNAL SOURCES:
+  LDOGradientView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LDOGradientView: 3b70030ba86aa222dbca058ece1a6593d509cc79
+
+PODFILE CHECKSUM: b5b45153aa67c858242775a7593d378daaba296f
+
+COCOAPODS: 1.5.3

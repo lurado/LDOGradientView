@@ -1,0 +1,7 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'LDOGradientView_Example' do
+  pod 'LDOGradientView', :path => '../'
+end
