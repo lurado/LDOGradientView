@@ -15,13 +15,14 @@ gradientView.rotation = CGFloat(45)
 gradientView.startColor = .red
 gradientView.endColor = .yellow
 gradientView.startOffset = 0.2
-gradientView.endOffset = 0.2
+gradientView.endOffset = 0.5
 ```
 
 While easy to use from code, you'll probably want to configure it in Interface Builder.
 
 ![LDOGradientView demo](Screenshots/IBInspectable.png)
 
+While `LDOGradientView` uses `IBInspectable` it does _not_ support `IB_DESIGNABLE`, because it seems that Interface Builder still struggles rendering those views properly.
 
 ## Example
 

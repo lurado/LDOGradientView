@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'LDOGradientView'
   s.version          = '1.0.2'
-  s.summary          = 'A simple but flexible gradient view.'
+  s.summary          = 'A simple but flexible gradient view with Interface Builder support.'
 
   s.description      = <<-DESC
 Draws a gradient between two colors. Direction, start and end offset are configurable.
