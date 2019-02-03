@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  LDOGradientView_Example
+//  LDOGradientView Example
 //
 //  Created by Sebastian Ludwig on 02.02.19.
 //  Copyright (c) 2019 Julian Raschke und Sebastian Ludwig GbR. All rights reserved.
