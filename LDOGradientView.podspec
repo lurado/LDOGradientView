@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'LDOGradientView'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'A simple but flexible gradient view with Interface Builder support.'
 
   s.description      = <<-DESC

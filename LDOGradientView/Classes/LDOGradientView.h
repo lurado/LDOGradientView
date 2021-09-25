@@ -13,9 +13,11 @@
 @property (nullable, nonatomic) IBInspectable UIColor *startColor;
 /// [0, 1]
 @property (nonatomic) IBInspectable CGFloat startOffset;
+@property (nonatomic) IBInspectable CGFloat startAlpha;
 
 @property (nullable, nonatomic) IBInspectable UIColor *endColor;
 @property (nonatomic) IBInspectable CGFloat endOffset;
+@property (nonatomic) IBInspectable CGFloat endAlpha;
 
 /// in degrees, clockwise, 0 middle top
 @property (nonatomic) IBInspectable CGFloat rotation;

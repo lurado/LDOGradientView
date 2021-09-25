@@ -22,6 +22,15 @@ CGPoint SquarePointForAngle(CGFloat angle) {
 
 @implementation LDOGradientView
 
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    if (self = [super initWithCoder:coder]) {
+        _startAlpha = 1;
+        _endAlpha = 1;
+    }
+    return self;
+}
+
 + (Class)layerClass
 {
     return [CAGradientLayer class];
@@ -52,7 +61,9 @@ CGPoint SquarePointForAngle(CGFloat angle) {
     gradientLayer.startPoint = start;
     gradientLayer.endPoint = end;
     
-    gradientLayer.colors = @[(id)self.startColor.CGColor, (id)self.endColor.CGColor];
+    UIColor *startColor = [self.startColor colorWithAlphaComponent:self.startAlpha];
+    UIColor *endColor = [self.endColor colorWithAlphaComponent:self.endAlpha];
+    gradientLayer.colors = @[(id)startColor.CGColor, (id)endColor.CGColor];
 }
 
 - (void)setRotation:(CGFloat)rotation
@@ -64,6 +75,12 @@ CGPoint SquarePointForAngle(CGFloat angle) {
 - (void)setStartOffset:(CGFloat)startOffset
 {
     _startOffset = startOffset;
+    [self updateGradient];
+}
+
+- (void)setStartAlpha:(CGFloat)startAlpha
+{
+    _startAlpha = startAlpha;
     [self updateGradient];
 }
 
@@ -82,6 +99,12 @@ CGPoint SquarePointForAngle(CGFloat angle) {
 - (void)setEndColor:(UIColor *)endColor
 {
     _endColor = endColor;
+    [self updateGradient];
+}
+
+- (void)setEndAlpha:(CGFloat)endAlpha
+{
+    _endAlpha = endAlpha;
     [self updateGradient];
 }
 

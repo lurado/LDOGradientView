@@ -22,5 +22,13 @@ class ViewController: UIViewController {
     
     @IBAction func changeEndOffset(_ slider: UISlider) {
         gradientView.endOffset = CGFloat(slider.value)
-    }    
+    }
+    
+    @IBAction func changeStartAlpha(_ slider: UISlider) {
+        gradientView.startAlpha = CGFloat(slider.value)
+    }
+    
+    @IBAction func changeEndAlpha(_ slider: UISlider) {
+        gradientView.endAlpha = CGFloat(slider.value)
+    }
 }
